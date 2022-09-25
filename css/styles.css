@@ -8,9 +8,30 @@
         --primary-text-color: #FFFFFF;
         --accent-text-color: #2196F3;
         --second-accent-color: #188CE8;
-        --accent-background-color: #188CE8;
-    
-
+        --accent-background-color: #188CE8;   
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+img {
+    display: block;
+}
+  .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+.container {
+    width: 1600px;
+    padding-left: 215px;
+    padding-right: 215px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .link-logo {
     font-family: 'Raleway';
@@ -38,6 +59,10 @@ a {
 .site-nav {
     background-color: var(--ptimary-backgrond-color);
 }
+.main-nav, .site-nav {
+    display: flex;
+    align-items: center;
+}
 .site-nav .link {
     color: var(--title-text-color);
     font-family: Roboto, sans-serif;
@@ -55,6 +80,12 @@ a {
         line-height: 1.14 ;
         letter-spacing: 0.02em;
         list-style: inherit;
+         }
+         .nav-list {
+            display: flex;
+            gap: 50px;
+            margin-left: auto;
+          
          }
          .header-link {
           color: var(--second-text-color);
@@ -75,14 +106,18 @@ a {
 .link:focus {
     color: var(--accent-text-color);
 }
+.site-nav-list {
+    display: flex;
+    gap: 50px;
+   margin-left: 50px;
+}
+
     .site-nav .link:focus,
     .site-nav .link:hover {
         color: var(--accent-text-color);
     }
 
-    .list {
-        list-style: none;
-    }
+  
     link {
         text-decoration: none;
     }
@@ -93,6 +128,8 @@ a {
         }
         .hero {
             background-color: var(--second-background-color);
+            text-align: center;
+            margin-bottom: 94px;
         }
         .title {
             color: var(--primary-text-color);
@@ -100,8 +137,10 @@ a {
                 font-size: 44px;
                 line-height: 1.36;
                 letter-spacing: 0.06em;
-                text-align: center;
                 text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 30px;
+                padding: 0;
         }
        .visually-hidden{
         position: absolute;
@@ -119,11 +158,18 @@ a {
         background-color: #2196F3;
             font-weight: 700;
             font-size: 16px;
+            min-width: 216px;
             line-height: 1.88;
             text-align: center;
             letter-spacing: 0.06em;
             font-family: inherit;
             cursor: pointer;
+            display: inline-block;
+            border-radius: 4px;
+            padding: 10px 32px;
+            border: 1px solid transparent;
+            margin-right: 0;
+            margin-left: 0;
      }
      .button:hover,
      button:focus {
@@ -145,6 +191,18 @@ background-color: var(--accent-background-color);
        
      
                                          /* hero */
+        .about {
+            margin-bottom: 94px;
+        
+        } 
+        .about-list {
+           display: flex;
+           gap: 50px;
+        }
+        .site-nav-list {
+            display: flex;
+            gap: 30px;
+        }
      .features {
         color: var(--title-text-color);
         font-style: normal;
@@ -159,6 +217,9 @@ background-color: var(--accent-background-color);
             line-height: 1.71;
             letter-spacing: 0.03em;
      }
+     .content {
+        margin-bottom: 93px;
+     }
    .content-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -166,15 +227,22 @@ background-color: var(--accent-background-color);
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 50px;
    }
    .slider {
     background-color: var(--section-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 
    }
    .slider-list {
-    background-color: var(--ptimary-backgrond-color);
+    display: flex;
+    gap: 30px;
+ 
    }
+
    .slider-heading {
     color: var(--title-text-color);
     font-weight: 700;
@@ -182,12 +250,15 @@ background-color: var(--accent-background-color);
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 50px;
    }
 .slider-title {
     color: var(--title-text-color);
     font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
+        padding-bottom: 10px;
 }
 .slider-text {
     color: var(--second-text-color);
@@ -196,9 +267,18 @@ background-color: var(--accent-background-color);
 }
 .footer {
     background-color: var(--second-background-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-link {
+    margin-bottom: 20px;
 }
 .footer-title {
     color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+.slider-img {
+    margin-bottom: 30px;
 }
 .footer-contacts {
         color: var(--footer-contacts-color);
@@ -212,14 +292,26 @@ background-color: var(--accent-background-color);
         line-height: 1.71;
         letter-spacing: 0.03em;
         font-style: normal;
+        margin-bottom: 9px;
 }
 
+.header {
+    margin-bottom: 94px;
+    outline: solid red;
+}
+.cart {
+    margin-bottom: 94px;
+}
 .cart-title {
 color: var(--title-text-color);
 font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.03em;
+    margin-bottom: 4px;
+}
+.cart-img {
+    margin-bottom: 30px;
 }
 .cart-text {
 color: var(--second-text-color);
@@ -227,7 +319,6 @@ color: var(--second-text-color);
     line-height: 1.9;
     letter-spacing: 0.03em;
 }
-
 
 
 
