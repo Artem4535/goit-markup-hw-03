@@ -128,7 +128,7 @@ a {
 .site-nav-list {
     display: flex;
     gap: 50px;
-   margin-left: 50px;
+   margin-left: 93px;
 }
 
     .site-nav .link:focus,
@@ -218,7 +218,10 @@ background-color: var(--accent-background-color);
         } 
         .about-list {
            display: flex;
-           gap: 50px;
+           gap: 30px;
+        }
+        .about-list li {
+            flex-basis: calc((100% - 3 * 30px) / 4);
         }
         .content .list {
             display: flex;
@@ -321,17 +324,18 @@ background-color: var(--accent-background-color);
         letter-spacing: 0.03em;
         font-style: normal;
         display: inline-block;
-        margin-bottom: 9px;
 }
-.footer-text {
+
+.footer-list .item {
     margin-bottom: 9px;
 }
-.footer-text:last-child {
-    margin-bottom: 20px;
+
+.footer-list .item:last-child {
+    margin-bottom: 0;
 }
-.footer-text:last-child {
-    margin-bottom: 9px;
-}
+    
+ 
+
 
 .cart {
    padding-top: 94px;
@@ -368,24 +372,26 @@ color: var(--second-text-color);
     
 }
  .secondary-list .item {
-    margin-bottom: 30px;
-    width: calc((100% - 60px) /3);
+    flex-basis: calc((100% - 60px) /3);
  }
  .secondary-list .item:nth-last-child(-n+3) {
     margin-bottom: 0;
  }
- .secondary-list .item {
-    border: 1px 1px solid #EEEEEE;
-        border-top: 0;
- }
+  
+  .secondary-list .item {
+     /* border: 1px solid #EEEEEE; */
+     border-top: none;
+  }
 
  .primary-slider-text {
     padding-top: 30px;
     padding-bottom: 30px;
  }
 
- .card-container {
+ .cart-container {
    padding: 20px 24px;
+   border: 1px solid #EEEEEE;
+   border-top: none;
    }
   
     
